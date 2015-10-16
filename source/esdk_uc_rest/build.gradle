@@ -1,0 +1,14 @@
+
+ext.zipFileName = 'esdksvr_uc_api_prof_rest'
+
+ext.zipProjectDirs = ["esdk_uc_domain", "esdk_uc_neadp_interface", "esdk_uc_rest"]
+
+addDependentProject(project, "compile", "esdk_platform_common")
+addDependentProject(project, "compile", "esdk_platform_interface")
+addDependentProject(project, "compile", "esdk_uc_base")
+addDependentProject(project, "compile", "esdk_uc_domain")
+
+dependencies {
+	compile ':log4j:1.2.16'
+	compile ':javax.ws.rs:'
+}
